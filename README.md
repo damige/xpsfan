@@ -17,8 +17,9 @@ Normal usage for me temps and performance is fine. (browsing, coding, etc)
 GPU seems to be the main contributor to the heat
 
 TODO:
--xps_fan-original sets cpu back to 3.2ghz, this may not be the same if you have an i5, this may cause unexpected behaviour
--more testing
+
+- more testing
+- ??
 
 -- WARNING, your laptop may overheat! use with caution. I will not be responcible for any damages --
 
