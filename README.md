@@ -1,6 +1,6 @@
 # xpsfan
 
--- WARNING, your laptop may overheat! use with caution. I will not be responsible for any damages --
+-- WARNING, your laptop may overheat! use with caution. I will not be responsible for any damage --
 
 Arch-linux Tool to lock the fan on dell XPS13 (9350)
 
@@ -28,5 +28,5 @@ TODO:
 - more testing
 - ??
 
--- WARNING, your laptop may overheat! use with caution. I will not be responsible for any damages --
+-- WARNING, your laptop may overheat! use with caution. I will not be responsible for any damage --
 
