@@ -12,12 +12,12 @@ Silent mode requires intel driver (not modeset) as it lowers gpu speed through i
 
 xps_fan-original will reenable turbo, allow cpu to max (3.2ghz i7 6560U) and intel gpu up to max (1050mhz for iris 540)
 
-On testing my laptop will run up to 95c after a few minutes of stresstesting (gaming). 
+Testing my laptop in silent mode shows it will run up to 95c after a few minutes of stress (gaming). 
 Running on 1.2ghz makes it 100c and throtting seems to occur.
-Using a 4 thread cpu stresstest temps are ~65c.
+Using a 4 thread cpu stresstest on silentmode temps are ~65c.
 
-Normal usage for me temps and performance is fine. (browsing, coding, etc)
-GPU seems to be the main contributor to the heat, if not using the gpu intensively i have found that the cpu frequency can be set higher (tested ~1.6ghz).
+Normal usage for me temps and performance in silentmode is fine. (browsing, coding, etc)
+GPU seems to be the main contributor to the heat, if not using the gpu intensively i have found that the cpu frequency can be set higher (tested ~1.6ghz but not implemented for safety).
 
 QUIRKS:
 
