@@ -1,7 +1,7 @@
 # xpsfan
 Arch-linux Tool to disable the fan on XPS13 (9350)
 
-Program will disable turbo mode for silent running. 
+Program will disable turbo mode and fan for silent running. 
 Run fan_on / fan_off with root
 
 On my short testing i notice that laptop will run up to 100C after a few minutes of stresstesting (gpu+cpu)
