@@ -4,14 +4,14 @@
 #
 
 pkgname=xpsfan_smm
-pkgver=1.42
+pkgver=0.1
 pkgrel=1
 arch=('i686' 'x86_64')
 license=('')
 depends=('')
 makedepends=('gcc-multilib')
 options=('!strip')
-source=("https://launchpad.net/i8kutils/trunk/1.42/+download/i8kutils_${pkgver}.tar.xz")
+source=("https://launchpad.net/i8kutils/trunk/1.42/+download/i8kutils_1.42.tar.xz")
 
 sha256sums=('SKIP')
 validpgpkeys=()
