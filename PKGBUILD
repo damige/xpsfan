@@ -22,10 +22,14 @@ build() {
 
 package() {
         install -Dm755 "$srcdir"/smm "$pkgdir"/usr/local/bin/smm
-        install -Dm755 "$srcdir"/../fan_off "$pkgdir"/usr/local/bin/fan_off
-        install -Dm755 "$srcdir"/../fan_on "$pkgdir"/usr/local/bin/fan_on
+        install -Dm755 "$srcdir"/../xps_fan-lock "$pkgdir"/usr/local/bin/xps_fan-lock
+        install -Dm755 "$srcdir"/../xps_fan-unlock "$pkgdir"/usr/local/bin/xps_fan-unlock
+	install -Dm755 "$srcdir"/../xps_original "$pkgdir"/usr/local/bin/xps_original
+	install -Dm755 "$srcdir"/../xps_silent "$pkgdir"/usr/local/bin/xps_silent
 	chmod +x "$pkgdir"/usr/local/bin/smm
-	chmod +x "$pkgdir"/usr/local/bin/fan_off
-	chmod +x "$pkgdir"/usr/local/bin/fan_on
+	chmod +x "$pkgdir"/usr/local/bin/xps_fan-lock
+	chmod +x "$pkgdir"/usr/local/bin/xps_fan-unlock
+        chmod +x "$pkgdir"/usr/local/bin/xps_fan-original
+        chmod +x "$pkgdir"/usr/local/bin/xps_fan-silent
 }
 
