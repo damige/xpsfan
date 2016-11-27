@@ -24,8 +24,8 @@ package() {
         install -Dm755 "$srcdir"/smm "$pkgdir"/usr/local/bin/smm
         install -Dm755 "$srcdir"/../xps_fan-lock "$pkgdir"/usr/local/bin/xps_fan-lock
         install -Dm755 "$srcdir"/../xps_fan-unlock "$pkgdir"/usr/local/bin/xps_fan-unlock
-	install -Dm755 "$srcdir"/../xps_original "$pkgdir"/usr/local/bin/xps_original
-	install -Dm755 "$srcdir"/../xps_silent "$pkgdir"/usr/local/bin/xps_silent
+	install -Dm755 "$srcdir"/../xps_fan-original "$pkgdir"/usr/local/bin/xps_fan-original
+	install -Dm755 "$srcdir"/../xps_fan-silent "$pkgdir"/usr/local/bin/xps_fan-silent
 	chmod +x "$pkgdir"/usr/local/bin/smm
 	chmod +x "$pkgdir"/usr/local/bin/xps_fan-lock
 	chmod +x "$pkgdir"/usr/local/bin/xps_fan-unlock
