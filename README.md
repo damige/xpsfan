@@ -17,6 +17,10 @@ Using a 4 thread cpu stresstest temps are ~65c
 Normal usage for me temps and performance is fine. (browsing, coding, etc)
 GPU seems to be the main contributor to the heat, if not using the gpu intensively i have found that the cpu frequency can be set higher (tested ~1.6ghz).
 
+QUIRKS:
+
+- FN-F11 / FN-F12 seems to stop working in silent mode. No idea why.
+
 TODO:
 
 - more testing
