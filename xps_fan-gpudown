@@ -1,0 +1,5 @@
+#!/usr/bin/bash
+
+freq=`sudo intel_gpu_frequency | grep cur | cut -d' ' -f2`
+newfreq=$((freq-50))
+sudo intel_gpu_frequency -c max=$newfreq

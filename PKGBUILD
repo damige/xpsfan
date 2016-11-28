@@ -4,7 +4,7 @@
 #
 
 pkgname=xpsfan_smm
-pkgver=0.1
+pkgver=0.22
 pkgrel=1
 arch=('i686' 'x86_64')
 license=('')
@@ -26,10 +26,9 @@ package() {
         install -Dm755 "$srcdir"/../xps_fan-unlock "$pkgdir"/usr/local/bin/xps_fan-unlock
 	install -Dm755 "$srcdir"/../xps_fan-original "$pkgdir"/usr/local/bin/xps_fan-original
 	install -Dm755 "$srcdir"/../xps_fan-silent "$pkgdir"/usr/local/bin/xps_fan-silent
+        install -Dm755 "$srcdir"/../xps_fan-gpuup "$pkgdir"/usr/local/bin/xps_fan-gpuup
+        install -Dm755 "$srcdir"/../xps_fan-gpudown "$pkgdir"/usr/local/bin/xps_fan-gpudown
 	chmod +x "$pkgdir"/usr/local/bin/smm
-	chmod +x "$pkgdir"/usr/local/bin/xps_fan-lock
-	chmod +x "$pkgdir"/usr/local/bin/xps_fan-unlock
-        chmod +x "$pkgdir"/usr/local/bin/xps_fan-original
-        chmod +x "$pkgdir"/usr/local/bin/xps_fan-silent
+	chmod +x "$pkgdir"/usr/local/bin/xps_fan-*
 }
 
