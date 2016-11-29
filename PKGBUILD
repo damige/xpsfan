@@ -4,7 +4,7 @@
 #
 
 pkgname=xpsfan_smm
-pkgver=0.22
+pkgver=0.23
 pkgrel=1
 arch=('i686' 'x86_64')
 license=('')
@@ -28,6 +28,7 @@ package() {
 	install -Dm755 "$srcdir"/../xps_fan-silent "$pkgdir"/usr/local/bin/xps_fan-silent
         install -Dm755 "$srcdir"/../xps_fan-gpuup "$pkgdir"/usr/local/bin/xps_fan-gpuup
         install -Dm755 "$srcdir"/../xps_fan-gpudown "$pkgdir"/usr/local/bin/xps_fan-gpudown
+        install -Dm755 "$srcdir"/../xps_fan-gpulowhigh "$pkgdir"/usr/local/bin/xps_fan-gpulowhigh	
 	chmod +x "$pkgdir"/usr/local/bin/smm
 	chmod +x "$pkgdir"/usr/local/bin/xps_fan-*
 }

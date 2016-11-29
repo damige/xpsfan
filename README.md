@@ -8,7 +8,7 @@ Run xps_fan-unlock / xps_fan-lock / xps_fan-silent  / xps_fan-original with root
 
 xps_fan-silent will disable turbo mode, lock cpu to 1ghz, intel gpu to minimum (300mhz for iris 540) and lock the fan for silent running.
 Go into silent mode when the fan is already off, as it will lock the fan in that state.
-Silent mode requires intel driver (not modeset) as it lowers gpu speed through intel supplied tools
+Silent mode requires intel gpu tools as it lowers gpu speed with it.
 
 xps_fan-original will reenable turbo, allow cpu to max (3.2ghz i7 6560U) and intel gpu up to max (1050mhz for iris 540)
 
