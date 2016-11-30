@@ -2,9 +2,9 @@
 
 -- WARNING, your laptop may overheat! use with caution. I will not be responsible for any damage --
 
-Arch-linux Tool to lock the fan on dell XPS13 (9350)
+Arch-linux Tool to lock the fan on dell XPS13 (9350) / tweak cpu and gpu 
 
-Run xps_fan-unlock / xps_fan-lock / xps_fan-silent  / xps_fan-original with root
+Run xps_fan-* with root
 
 xps_fan-silent will disable turbo mode, lock cpu to 1ghz, intel gpu to minimum (300mhz for iris 540) and lock the fan for silent running.
 Go into silent mode when the fan is already off, as it will lock the fan in that state.
@@ -19,14 +19,23 @@ Using a 4 thread cpu stresstest on silentmode temps are ~65c.
 Normal usage for me temps and performance in silentmode is fine. (browsing, coding, etc)
 GPU seems to be the main contributor to the heat, if not using the gpu intensively i have found that the cpu frequency can be set higher (tested ~1.6ghz but not implemented for safety).
 
+xps_fan-gpuup increases the freq by 100mhz 
+xps_fan-gpudown decreases the freq by 100mhz
+
+This can be benificial when binding to hotkeys, as i find that when gaming sometimes lowering the gpu speed increases FPS (especially in cpu-bound games like Pillars of Eternity)
+
+xps_fan-gpulowhigh toggles between gpu powersave and default (variable) frequencies
+
 QUIRKS:
 
 - FN-F11 / FN-F12 seems to stop working in silent mode. No idea why.
 
 TODO:
 
-- more testing
-- ??
+- More testing
+- Merge some scripts to entities that make more sense
+- Reset SMM on reboot
+- Temp threshold to reenable fan (this will allow higher cpu freq in silent mode)
 
 -- WARNING, your laptop may overheat! use with caution. I will not be responsible for any damage --
 
