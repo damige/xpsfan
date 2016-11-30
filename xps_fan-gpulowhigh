@@ -2,14 +2,13 @@
 
 curfreq=`sudo intel_gpu_frequency | grep cur | cut -d' ' -f2`
 minfreq=`sudo intel_gpu_frequency | grep min | cut -d' ' -f2`
+maxfreq=`sudo intel_gpu_frequency | grep max | cut -d' ' -f2`
 
-if [ "$curfreq" -eq "$minfreq" ]
+if [ "$curfreq" -eq "$minfreq" ] && [ "$curfreq" -eq "$maxfreq" ]
  then sudo intel_gpu_frequency -d
  echo "Variable gpu-freq (default)"
  exit
-fi
-if [ "$curfreq" -gt "$minfreq" ]
- then sudo intel_gpu_frequency -i
+ else sudo intel_gpu_frequency -i
  echo "Minimum gpu-freq locked"
  exit
 fi
