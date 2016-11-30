@@ -1,11 +1,17 @@
 #!/usr/bin/bash
 
-freq=`sudo intel_gpu_frequency | grep cur | cut -d' ' -f2`
-if [ "$freq" -eq 300 ]
- then newfreq=1050
-fi
-if [ "$freq" -gt 300 ]
- then newfreq=300
-fi
+curfreq=`sudo intel_gpu_frequency | grep cur | cut -d' ' -f2`
+minfreq=`sudo intel_gpu_frequency | grep min | cut -d' ' -f2`
 
-sudo intel_gpu_frequency -c max=$newfreq
+if [ "$curfreq" -eq "$minfreq" ]
+ then sudo intel_gpu_frequency -d
+ echo "Variable gpu-freq (default)"
+ exit
+fi
+if [ "$curfreq" -gt "$minfreq" ]
+ then sudo intel_gpu_frequency -i
+ echo "Minimum gpu-freq locked"
+ exit
+fi
+echo "Error, is intel-gpu-tools installed?"
+exit 1
