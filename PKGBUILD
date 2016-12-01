@@ -22,13 +22,13 @@ build() {
 
 package() {
         install -Dm755 "$srcdir"/smm "$pkgdir"/usr/local/bin/smm
-        install -Dm755 "$srcdir"/../xps_fan-lock "$pkgdir"/usr/local/bin/xps_fan-lock
-        install -Dm755 "$srcdir"/../xps_fan-unlock "$pkgdir"/usr/local/bin/xps_fan-unlock
-	install -Dm755 "$srcdir"/../xps_fan-original "$pkgdir"/usr/local/bin/xps_fan-original
-	install -Dm755 "$srcdir"/../xps_fan-silent "$pkgdir"/usr/local/bin/xps_fan-silent
-        install -Dm755 "$srcdir"/../xps_fan-gpuup "$pkgdir"/usr/local/bin/xps_fan-gpuup
-        install -Dm755 "$srcdir"/../xps_fan-gpudown "$pkgdir"/usr/local/bin/xps_fan-gpudown
-        install -Dm755 "$srcdir"/../xps_fan-gpulowhigh "$pkgdir"/usr/local/bin/xps_fan-gpulowhigh	
+        install -Dm755 "$srcdir"/../fanlock/xps_fan-lock "$pkgdir"/usr/local/bin/xps_fan-lock
+        install -Dm755 "$srcdir"/../fanlock/xps_fan-unlock"$pkgdir"/usr/local/bin/xps_fan-unlock
+	install -Dm755 "$srcdir"/../silentmode/xps_fan-original "$pkgdir"/usr/local/bin/xps_fan-original
+	install -Dm755 "$srcdir"/../silentmode/xps_fan-silent "$pkgdir"/usr/local/bin/xps_fan-silent
+        install -Dm755 "$srcdir"/../gpufreq/xps_fan-gpuup "$pkgdir"/usr/local/bin/xps_fan-gpuup
+        install -Dm755 "$srcdir"/../gpufreq/xps_fan-gpudown "$pkgdir"/usr/local/bin/xps_fan-gpudown
+        install -Dm755 "$srcdir"/../gpufreq/xps_fan-gpulowhigh "$pkgdir"/usr/local/bin/xps_fan-gpulowhigh	
 	chmod +x "$pkgdir"/usr/local/bin/smm
 	chmod +x "$pkgdir"/usr/local/bin/xps_fan-*
 }
