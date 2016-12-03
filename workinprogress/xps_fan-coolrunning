@@ -1,0 +1,12 @@
+#!/usr/bin/bash
+
+echo 1 | tee /sys/devices/system/cpu/intel_pstate/no_turbo
+#echo 1600000 | tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_max_freq 
+intel_gpu_frequency -i
+smm 31a3
+
+
+
+
+
+

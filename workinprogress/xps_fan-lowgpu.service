@@ -1,0 +1,19 @@
+# xps_fan-lowgpu
+#
+
+
+[Unit]
+Description=Set gpufreq to low
+Wants=
+After=multi-user.target
+Before=shutdown.target
+Documentation=http://github.com/damige
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/bin/intel_gpu_frequency -i
+ExecStop=/usr/bin/intel_gpu_frequency -d
+
+[Install]
+WantedBy=multi-user.target
